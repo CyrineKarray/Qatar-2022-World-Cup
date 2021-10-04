@@ -1,0 +1,37 @@
+<div *ngIf="show" class="sidebar">
+    <a href="" (click)="clickReset()">
+        <div class="logo">
+            <img  src="/assets/fifa.png" alt="logo">
+        </div>
+    </a>
+    <a href="/users">
+        <div *ngIf="isAdmin"  class="item" (click)="clickFun($event)">
+            Users
+        </div>
+    </a>
+    <a  href="/spectators">
+        <div *ngIf="isModerator" class="item" (click)="clickFun($event)">
+            Spectators
+        </div>
+    </a>
+    <a href="/roles">
+        <div *ngIf="isAdmin"  class="item" (click)="clickFun($event)">
+            Roles
+        </div>
+    </a>
+    <a  href="/ticket">
+        <div *ngIf="isModerator" class="item" (click)="clickFun($event)">
+            Tickets
+        </div>
+    </a>
+    <a href="/match">
+        <div class="item" (click)="clickFun($event)">
+            Matches
+        </div>
+    </a>
+    <a href="/ref">
+        <div class="item" (click)="clickFun($event)">
+            Referees
+        </div>
+    </a>
+</div>

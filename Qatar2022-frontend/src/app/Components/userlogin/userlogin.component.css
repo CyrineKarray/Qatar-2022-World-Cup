@@ -1,0 +1,21 @@
+.loggedin{
+    margin: 2% 2%;
+    font-family: "Maven Pro";
+    font-weight: 700;
+    color: #003399;
+
+    background-color: white;
+    border-radius: 20px;
+    padding:2%;
+    box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    
+}
+
+
+.profileimg{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}

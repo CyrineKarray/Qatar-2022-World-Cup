@@ -1,0 +1,152 @@
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 14, 41, 0.7); /*can be anything, of course*/
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    min-height:100%;
+    min-width:100%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
+    z-index: -2;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .btn1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+  }
+
+  .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+  }
+
+  .container  {
+    background-color: white;
+  }
+  
+  
+  
+  .export{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 80%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(75, 159, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    transition: 0.4s ease-in-out;
+  }
+  .export:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    background-color: rgb(11, 118, 240);
+  }
+  
+  .btnAdd{background-color:#00994d; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+  }
+  .btnAdd:hover {
+    transform: scale(1.1);
+    background-color:#10bd00 ;
+    transition:.4s ease-in-out;
+  }
+  
+  .btnPdf{background-color:#3d4b68; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+  }
+  .btnPdf:hover {
+    transform: scale(1.1);
+    background-color:#3d4b68 ;
+    transition:.4s ease-in-out;
+  }
+  
+  .btnUpdate{background-color:#003399; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+  }
+  .btnUpdate:hover {
+    transform: scale(1.1);
+    background-color:#003fbd ;
+    transition:.4s ease-in-out;
+  }
+  .btnDelete{background-color:#990000; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+  }
+  .btnDelete:hover {
+    transform: scale(1.1);
+    background-color:#bd0000 ;
+    transition:.4s ease-in-out;
+  }

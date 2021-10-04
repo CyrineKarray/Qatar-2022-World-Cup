@@ -1,0 +1,98 @@
+#wave{
+    position: absolute;
+    z-index: -1;
+}
+#waveBottom{
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+.table-container{
+    position:absolute;
+    width: 75%;
+    top: 5%;
+    bottom: 5%;
+    right: 50px;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    overflow: auto;
+}
+
+.export{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 80%;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(75, 159, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(98,114,123,0.51);
+    transition: 0.4s ease-in-out;
+}
+.export:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    background-color: rgb(11, 118, 240);
+}
+
+.btnAdd{background-color:#00994d; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+}
+.btnAdd:hover {
+    transform: scale(1.1);
+    background-color:#10bd00 ;
+    transition:.4s ease-in-out;
+}
+
+.btnPdf{background-color:#3d4b68; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+}
+.btnPdf:hover {
+    transform: scale(1.1);
+    background-color:#3d4b68 ;
+    transition:.4s ease-in-out;
+}
+
+.btnUpdate{background-color:#003399; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+}
+.btnUpdate:hover {
+    transform: scale(1.1);
+    background-color:#003fbd ;
+    transition:.4s ease-in-out;
+}
+.btnDelete{background-color:#990000; 
+    color: white; 
+    outline: none; 
+    border:none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition:.4s ease-in-out;
+}
+.btnDelete:hover {
+    transform: scale(1.1);
+    background-color:#bd0000 ;
+    transition:.4s ease-in-out;
+}

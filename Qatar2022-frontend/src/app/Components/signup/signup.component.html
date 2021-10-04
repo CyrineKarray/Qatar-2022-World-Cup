@@ -1,0 +1,119 @@
+
+<div class="container homepage" id="main-container">
+   <button (click)="onOpenModal(null, 'add')"  class="btn1 btn-info">Get started</button><button (click)="onOpenModal(null, 'login')"  class="btn-primary btn2">Get logged in</button>
+   <div class="overlay"></div>
+    <img src="/assets/ball.jpeg" alt="Snow">
+
+
+
+  </div>
+  <div class="float-right table-container" id="main-container">
+    </div>
+
+  <!-- Add User Modal -->
+  <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="addUserModalLabel" style="font-weight: 700;">Sign up</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+          </div>
+          <div class="modal-body">
+             <form #addForm="ngForm" (ngSubmit)="onAddUser(addForm)">
+              <div class="form-row">
+                 <div class="form-group col-md-6">
+                   <label for="firstName">First name</label>
+                   <input ngModel type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="lastName">Last name</label>
+                   <input ngModel type="text" class="form-control" id="lastName" name="lastName" placeholder="Password"  required>
+                 </div>
+               </div>
+               <div class="form-row">
+                 <div class="form-group col-md-6">
+                    <label for="username">Username</label>
+                    <input ngModel type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input  ngModel type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                  </div>
+              </div>
+               <div class="form-row">
+                 <div class="form-group col-md-6">
+                    <label for="country">Country</label>
+                    <input ngModel type="text" class="form-control" id="country" name="country" placeholder="Country" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="tel">Phone number</label>
+                    <input ngModel type="text" class="form-control" id="tel" name="tel" placeholder="Phone number" required>
+                  </div>
+              </div>
+
+              <div class="form-row">
+                 <div class="form-group col-md-6">
+                    <label for="dob">Birth date</label>
+                    <input ngModel type="date" class="form-control" id="dob" name="dob" placeholder="Birth date" required>
+                  </div>
+
+                  <div class="form-row" style="margin-left: 1%;">
+                    <div class="form-group">
+                       <label for="email">Email</label>
+                       <input style="width: 465px;"  ngModel type="email" class="form-control" id="email" name="email" placeholder="example@example.com" required>
+                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="custom-file">
+                       <input ngModel (change)="onFileChanged($event)" name="image" type="file" class="custom-file-input" id="customFile">
+                       <label class="custom-file-label" for="customFile">Profile picture</label>
+                    </div>
+                 </div>
+              </div>
+             <div class="modal-footer">
+                <button type="button" id="add-user-form" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Register</button>
+             </div>
+             </form>
+          </div>
+       </div>
+     </div>
+  </div>
+
+    <!-- Login User Modal -->
+    <div class="modal fade" id="loginUserModal" tabindex="-1" role="dialog" aria-labelledby="loginUserModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h5 class="modal-title" id="loginUserModalLabel" style="font-weight: 700;">Get logged in</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+           </div>
+           <div class="modal-body">
+            <div *ngIf="isLoginFailed" class="alert alert-danger" role="alert">
+               Incorrect username or password!
+             </div>
+              <form #loginForm="ngForm" (ngSubmit)="onLoginUser(loginForm)">
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                     <label for="username">Username</label>
+                     <input ngModel type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                   </div>
+                   <div class="form-group col-md-6">
+                     <label for="password">Password</label>
+                     <input  ngModel type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                   </div>
+               </div>
+
+              <div class="modal-footer">
+                 <button type="button" id="add-user-form" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary" >Login</button>
+              </div>
+              </form>
+           </div>
+        </div>
+      </div>
+   </div>
